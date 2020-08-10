@@ -1,5 +1,22 @@
 (function() {
   var canvas = $('#canvas');
+  //播放
+  alert('点击右边音乐图标播放音乐哦！');
+  var myAuto = document.getElementById('music');
+  var myPng = document.getElementById('png');
+  myPng.addEventListener('click',()=> {
+    addClass();
+  })
+  function addClass() {
+    if(myPng.className.indexOf('xuanzhun')>-1) {
+      myPng.classList.remove('xuanzhun');
+      myAuto.pause();
+    }else {
+      myPng.classList.add('xuanzhun');
+      myAuto.play();
+    }
+  }
+  
 	//
   if (!canvas[0].getContext) {
     $("#error").show();
