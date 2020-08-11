@@ -134,7 +134,7 @@ var jumpAnimate = eval(Jscex.compile("async", function () {
 }));
 
 var textAnimate = eval(Jscex.compile("async", function () {
-  var together = new Date('2020-7-27 13:08:00').getTime();
+  var together = new Date('2020/7/27 13:08:00').getTime();
 
   $("#code").show().typewriter();
   $("#clock-box").fadeIn(500);
